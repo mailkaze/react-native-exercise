@@ -90,7 +90,7 @@ export default function HomeScreen({ navigation }) {
         <FlatList
           data={arr}
           renderItem={({ item }) => (
-            <Other content={item.content} color={item.color} />
+            <Other content={item.content} color={item.color} onPress={() => navigation.navigate("Profile", { name: "Jane" })}/>
           )}
         />
         <AnImage />
